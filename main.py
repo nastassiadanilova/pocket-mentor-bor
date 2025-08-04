@@ -23,7 +23,7 @@ async def request_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 app = ApplicationBuilder().token(BOT_TOKEN).build()
 
 app.add_handler(CommandHandler("start", start))
-app.add_handler(CommandHandler("запрос", request_command))
+app.add_handler(CommandHandler("sendrequest", request_command))
 
 print("Bot started...")
 app.run_polling()
